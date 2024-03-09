@@ -22,15 +22,15 @@
    yarn install
 ```
 
-# (Opcional) Se o backend não estiver rodando na porta 3000, ajuste a variável de ambiente REACT_APP_API_BASE_URL no arquivo .env do frontend para apontar para o endereço correto do backend.
+- (Opcional) Se o backend não estiver rodando na porta 3000, ajuste a variável de ambiente REACT_APP_API_BASE_URL no arquivo .env do frontend para apontar para o endereço correto do backend.
 
-- Inicie a aplicação React em uma porta diferente da do backend (por padrão, o React tentará usar a porta 3000, mas se estiver ocupada, ele sugerirá outra):
+* Inicie a aplicação React em uma porta diferente da do backend (por padrão, o React tentará usar a porta 3000, mas se estiver ocupada, ele sugerirá outra):
 
   ```bash
     npm start
   ```
 
-* ou
+- ou
 
   ```bash
     yarn start
