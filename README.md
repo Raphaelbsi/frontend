@@ -32,6 +32,6 @@
 
 * ou
 
-```bash
-   yarn start
-```
+  ```bash
+    yarn start
+  ```
