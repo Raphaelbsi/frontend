@@ -48,8 +48,7 @@ function CadastroCliente() {
         coordenada_y: ''
       });
     } catch (error) {
-      console.error('Não foi possível cadastrar o cliente', error);
-      setSnackbarMessage('Erro ao cadastrar cliente!');
+      setSnackbarMessage(error);
       setOpenSnackbar(true);
     }
   };

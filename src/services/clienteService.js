@@ -8,8 +8,7 @@ const clienteService = {
       const response = await axios.get(`${baseURL}/clientes`);
       return response.data;
     } catch (error) {
-      console.error('Erro ao buscar clientes', error);
-      throw error;
+      return error;
     }
   },
   cadastrar: async (cliente) => {
@@ -17,8 +16,7 @@ const clienteService = {
       const response = await axios.post(`${baseURL}/clientes`, cliente);
       return response.data;
     } catch (error) {
-      console.error('Erro ao criar cliente', error);
-      throw error;
+      throw error.response.data;
     }
   },
   rota: async () => {
